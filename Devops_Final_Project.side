@@ -1,0 +1,166 @@
+{
+  "id": "bbfd3912-c3ec-4e3e-98de-2e72d8ba7f03",
+  "version": "2.0",
+  "name": "Devops_Final_Project",
+  "url": "http://localhost:8090",
+  "tests": [{
+    "id": "2bf348d7-f05b-4124-9485-40699df5da1f",
+    "name": "trigger application",
+    "commands": [{
+      "id": "5731d409-881c-48b4-b4c2-1620c9194335",
+      "comment": "",
+      "command": "open",
+      "target": "/BarTaiOmerRoyDaniel/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5bbf1a3-2b3f-43d3-b175-886e7483ab13",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1022x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd45640d-79d1-44f1-8799-63aac75666b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4366afe7-c96c-42aa-ae00-7a7c86ed4521",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "bar"
+    }, {
+      "id": "6c11efd6-1677-4507-8e1c-b8234aa92998",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2a26c67-dfac-42cc-995e-7c44e298fd1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Hello, bar!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d242e08e-e59d-4785-a7c5-d9e4ebb84e9c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Link to Website",
+      "targets": [
+        ["linkText=Link to Website", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Link to Website')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.advantageonlineshopping.com/#/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Link to Website')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7714",
+      "windowTimeout": 2000
+    }, {
+      "id": "392810e9-cfe2-49b7-b2f5-063841bc80b8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7714}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6acc99a-4c59-4830-8348-a1243ac93396",
+      "comment": "",
+      "command": "click",
+      "target": "id=miceImg",
+      "targets": [
+        ["id=miceImg", "id"],
+        ["css=#miceImg", "css:finder"],
+        ["xpath=//div[@id='miceImg']", "xpath:attributes"],
+        ["xpath=//article[@id='our_products']/div[2]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3881eb1-6e04-4741-8c2c-76d78093b930",
+      "comment": "",
+      "command": "click",
+      "target": "id=28",
+      "targets": [
+        ["id=28", "id"],
+        ["css=#\\32 8", "css:finder"],
+        ["xpath=//img[@id='28']", "xpath:attributes"],
+        ["xpath=//li[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f3467ba-2b6c-4b02-9752-9039bbae2e4f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//span[@id='bunny'])[2]",
+      "targets": [
+        ["xpath=(//span[@id='bunny'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='productProperties']/div/div[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "343cf07f-4f52-43aa-9147-075cbce199c8",
+      "comment": "",
+      "command": "click",
+      "target": "name=save_to_cart",
+      "targets": [
+        ["name=save_to_cart", "name"],
+        ["css=.fixedBtn > .roboto-medium", "css:finder"],
+        ["xpath=//button[@name='save_to_cart']", "xpath:attributes"],
+        ["xpath=//div[@id='productProperties']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ADD TO CART')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86974c05-dfd2-4c27-9ad0-41cddfd92b52",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkOutPopUp",
+      "targets": [
+        ["id=checkOutPopUp", "id"],
+        ["name=check_out_btn", "name"],
+        ["css=#checkOutPopUp", "css:finder"],
+        ["xpath=//button[@id='checkOutPopUp']", "xpath:attributes"],
+        ["xpath=//tool-tip-cart[@id='toolTipCart']/div/table/tfoot/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//td/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "12a78b2a-9c41-493e-91e1-b09c5688fa7b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8090/"],
+  "plugins": []
+}
